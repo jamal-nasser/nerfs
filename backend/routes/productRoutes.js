@@ -11,9 +11,9 @@ const router = express.Router();
 router.get('/',
   asyncHandler(async (_, res) => {
 
-  const products = await Product.find({})
-
-  res.status(200).json(products)
+    const products = await Product.find({})
+  
+    res.status(200).json(products)
   }));
 
 // @desc   Fetch single products
